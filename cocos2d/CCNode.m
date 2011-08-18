@@ -753,7 +753,7 @@
 -(void) schedule:(SEL)selector interval:(ccTime)interval
 {
 	NSAssert( selector != nil, @"Argument must be non-nil");
-	NSAssert( interval >=0, @"Arguemnt must be positive");
+	NSAssert( interval >=0, @"Argument must be positive");
 	
 	[[CCScheduler sharedScheduler] scheduleSelector:selector forTarget:self interval:interval paused:!isRunning_];
 }
